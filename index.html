@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cheetsheet</title>
+</head>
+
+<body>
+  <h1>HTML tags cheetsheet</h1>
+  <hr>
+  <!-- this is a comment, a comment is used to describe what your code is doing for your other programmers and your future self -->
+  <!-- computer can't read comments -->
+  <!-- headings -->
+  <h1>Heading tags</h1>
+  <p>Heading tags are what you use when you want to title something or draw attention to it. Use these sparingly, less is more. There are 6 different heading tags ranging from largest to smallest.</p>
+  <h1>heading 1</h1>
+  <h2>heading 2</h2>
+  <h3>heading 3</h3>
+  <h4>heading 4</h4>
+  <h5>heading 5</h5>
+  <h6>heading 6</h6>
+  <hr>
+  <h1>Paragraph tag</h1>
+  <p>This is a basic tag that your text will go in</p>
+  <hr>
+  <h1>div and span tags</h1>
+  <div>
+    <p><span>These tags</span> are for sectioning off different pieces of your html code.</p>
+    <p>They will have no visual effect to your web page.</p>
+    <p>You will see more of these when we start to build full web pages as well as when we get into CSS and JavaScript.</p>
+  </div>
+  <hr>
+  <h1>Formatting tags</h1>
+  <div>
+    <b> - Bold text<b>
+        <strong> - Important text</strong><br>
+        <i> - Italic text</i><br>
+        <em> - Emphasized text</em><br>
+        <mark> - Marked text</mark><br>
+        <small> - Smaller text</small><br>
+        <del> - Deleted text</del><br>
+        <ins> - Inserted text</ins><br>
+        <sub> - Subscript text</sub><br>
+        <sup> - Superscript text</sup><br>
+  </div>
+  <p>em will <em>emphasize</em> text, strong will <strong>bold</strong> your text, u will <u>underline</u> your text.</p>
+  <hr>
+  <h1>br and hr tags</h1>
+  <p>The br tag acts as a line break and will make the next html element go to the next line<br><br>This text tag in two lines down now since we have two br tags above it</p>
+  <hr>
+  <p>The hr tag is a br tag with an added line to help break up content</p>
+  <hr>
+  <p>You may have noticed that the p tag already places itself on the next line. That is because it a block level element.</p>
+  <p>With HTML there are block level and inline level elements. Block level means that the element will automatically get placed on the next line where as inline elements will try to stay on the same line as long as there is space to do so. If there isn't enough space to fit that element it will drop to the next line.</p>
+  <hr>
+  <h1>Links</h1>
+  <p>Links are how you go from one page to another.</p>
+  <a href="https://www.google.com">click me to go to google</a>
+  <p>something new to notice in the <code>a</code> tag is the href.</p>
+  <p>some tags have something that's called an <code>attribute</code> and <code>attribute allows us to add extra functionality to the tag</code></p>
+  <p>another attribute that we can add to the <code>a</code> tag is called <code>target</code></p>
+  <p>if we assign a <code>target</code> attribute with a <code>_blank</code> value this will cause the link to open in a new tab as opposed to the same page.</p>
+  <p>this is generally used when you want to show a user a different page but you don't want them to leave your site altogether.</p>
+  <hr>
+  <h1>Image tags</h1>
+  <p><code>img</code> tags are used to display an image, we do this by using the <code>img</code> tag's <code>src</code> attribute</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Rubber_Duck_%288374802487%29.jpg/220px-Rubber_Duck_%288374802487%29.jpg" title="rubber duck" alt="rubber duck" width="200" height="147">
+  <p>you will notice that the <code>img</code> tag also has other attributes that we can use like <code>title, alt, width, and height</code></p>
+  <hr>
+  <h1>Table tags</h1>
+  <p>Table tages are for displaying data</p>
+  <table>
+    <thead>
+      <tr>
+        <th>heading 1</th>
+        <th>heading 2</th>
+        <th>heading 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>body 1</td>
+        <td>body 2</td>
+        <td>body 3</td>
+      </tr>
+      <tr>
+        <td>body 4</td>
+        <td>body 5</td>
+        <td>body 6</td>
+      </tr>
+      <tr>
+        <td>body 7</td>
+        <td>body 8</td>
+        <td>body 9</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <h1>Form tags</h1>
+  <p>Form tags are used to submit data</p>
+  <form action="sendMail.php">
+    <input type="text" name="fname" placeholder="First name"><br>
+    <input type="text" name="lname" placeholder="Last name"><br>
+    <input type="email" name="email" placeholder="Email"><br>
+    Subscribe? <input type="checkbox" name="subscribe"><br>
+    <input type="submit" value="Submit">
+  </form>
+  <hr>
+  <h1>Select tags</h1>
+  <p>Select tags are a way you can select information for forms</p>
+  <select name="cars" id="">
+    <option value="honda">Honda</option>
+    <option value="toyota">Toyota</option>
+    <option value="kia">Kia</option>
+    <option value="form">Ford</option>
+    <option value="chevy">Chevy</option>
+  </select>
+</body>
+
+</html>
